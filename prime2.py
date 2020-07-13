@@ -13,14 +13,14 @@ for x in range(10):
 print(prime)   
 
 ####################################################################
-divider(9973)
+# divider(9973)
 
-n = int(input("num : "))
-a = 0 
-b = 1
-print('0', end='')
-while b <= n:
-    print(',%d'%b,end='')
-    a,b = b,a+b
+# n = int(input("num : "))
+# a = 0 
+# b = 1
+# print('0', end='')
+# while b <= n:
+#     print(',%d'%b,end='')
+#     a,b = b,a+b
 
 

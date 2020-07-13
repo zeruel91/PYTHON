@@ -135,7 +135,7 @@ complement(a,b)
 
 union(complement(a,b),complement(b,a))
 
-def multi_input(*args):
+def multi_input(*args): #여러개의 알규먼트를 넣을수 있다.
     print (args[0])
     print (args[1])
     print (args[2])
