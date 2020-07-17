@@ -405,3 +405,19 @@ body = body.replace('대상','수정')#찾아서 바꿔서
 f=open('test.txt','w')#다시입력
 f.write(body)#여기서
 f.close
+
+
+
+
+
+
+try:
+num = eval(input("입력하시오: "))
+    if num - int(num):
+        print("소수입니다.")
+    else:
+        print("정수입니다.")
+    except:
+        print('math error')
+
+        
