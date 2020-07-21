@@ -109,13 +109,13 @@ def Number_system_change(number,n, m):
 import numpy as np
 class Natural_number:
     def question(self):
-        self.select = np.random.randint(5)
-        self.n1 = np.random.randint(100)
+        self.select = np.random.randint(5)#문제발생난수
+        self.n1 = np.random.randint(100)#문제에쓸 난수들 
         self.n2 = np.random.randint(100)
         self.n3 = np.random.randint(low = 2, high = 10)
         self.n4 = np.random.randint(low = 2, high = 30)
 
-        if self.select ==0:
+        if self.select ==0:#문제에 대한 텍스트들
             print('determind if {} is prime, if not, find diverder'.format(self.n1))
         elif self.select == 1:
             print ('find GCD with {} and {}'.format(self.n1,self.n2))
