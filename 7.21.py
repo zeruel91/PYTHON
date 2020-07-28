@@ -74,10 +74,10 @@ list(filter(lambda x:x%2==0,[3,1,4,2,9]))#코딩의길이를 줄이는 효과
 
 
 
-
+#7.21 Algorithm Problem //
 result = 0
 for i in range(24):
-    for j in range(61):
+    for j in range(60):
         if '3' in str(i) or str(j):
             result += 60
 print(result)
