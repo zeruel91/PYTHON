@@ -55,6 +55,21 @@ def Quick_sort(a):
 d = [8,12,1,9,102,25,32,98,31]
 print(Quick_sort(d))
 
+#위와같으나, 표현을 한줄로했음.
+def quick_sort(arr):
+    n = len(arr)
+
+    if n<=1:
+        return arr
+    else:
+        pivot = arr[0]
+        less = [x for x in arr[1:] if x<= pivot]
+        greater = [x for x in arr[1:] if x>pivot]
+        return quick_sort(less) +[pivot] + quick_sort(greater)
+
+arr = [7,3,1,6,5,2,4]
+print(quick_sort(arr))
+
 
 
 '''JAVA   ###< Ctrl + /'''

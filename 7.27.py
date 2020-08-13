@@ -38,6 +38,7 @@ np.exp(1)
 import random
 
 
+
 class random_linear:
     def create_prob(self):
         self.coefficient = random.randint(0,100)

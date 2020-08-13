@@ -9,5 +9,9 @@ for n in range(101):
 print(a)
 
 
+class Simul_inequality:
+    pass
+
+a = Simul_inequality()
         
         

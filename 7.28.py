@@ -1,4 +1,4 @@
-#저번시간 Algorithm
+"저번시간 Algorithm"
 
 S = [1,3,4,8,13,17,20]
 
@@ -63,7 +63,7 @@ def simultaneous_eq(a,b):
         return x,y
 
 a = Fraction(3,28)
-
+a
 
 import time
 # start = time.time()
