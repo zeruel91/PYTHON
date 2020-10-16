@@ -47,5 +47,12 @@ def det(a):
 a = '5+7*{(3*5)}()()()'
 det(a)
 
-#Alg HW
+#--------------------------------
+
+from itertools import permutations
+txt=permutations('SKIN')
+print(txt)
+
+for single_permutation in txt:
+    print(single_permutation)
 
