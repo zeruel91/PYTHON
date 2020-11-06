@@ -31,3 +31,41 @@ dfs(1, nums[0], add, sub, mul, div)
 #1과 0으로 잡는게 간편하다.
 print(max_)
 print(min_)
+
+-------------------------------------------------------
+n = int(input())
+# 연산을 수행하고자 하는 횟수
+data = list(map(int, input().split()))
+# 더하기, 빼기, 곱하기, 나누기 연산자 개수
+add, sub, mul, div = map(int, input().split())
+# 최솟값과 최댓값 초기화
+min_value = 1e9
+max_value = -1e9
+def dfs(i, now):
+    global min_value, max_value, add, sub, mul, div
+    if i == n:
+        min_value = min(min_value, now)
+        max_value = max(max_value, now)
+    else:
+        if add > 0:
+            add -= 1
+            dfs(i + 1, now + data[i])
+            add += 1
+        if sub > 0:
+            sub -= 1
+            dfs(i + 1, now - data[i])
+            sub += 1
+        if mul > 0:
+            mul -= 1
+            dfs(i + 1, now * data[i])
+            mul += 1
+        if div > 0:
+            div -= 1
+            dfs(i + 1, int(now / data[i]))
+            div += 1
+            #해당 문제에서는 글로벌 값으로 처리했기때문에 다시 복구해줘야한다.
+            #그렇지 않으면 아직 연산하지 않았는데, 연산횟수가
+            #차감되어 있는 오류가 생긴다.
+dfs(1,data[0])
+print(min_value)
+print(max_value)
